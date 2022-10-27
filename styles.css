@@ -1,0 +1,182 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+html{
+    overflow-x: hidden;
+}
+
+i {
+    margin-right: 0.5vw;
+}
+.fa-pencil{
+    color: hsl(217, 71%, 53%);
+}
+.fa-circle-check{
+    color: hsl(171, 100%, 41%);
+}
+.fa-layer-group{
+    color: #f8446c;
+}
+.fa-right-to-bracket{
+    color: #f96855;
+}
+.navbar-brand span{
+    font-weight: bold;
+}
+.navbar{
+    height: 10vh;
+    -webkit-box-shadow: 0px 10px 20px -13px rgba(0,0,0,0.1); 
+    box-shadow: 0px 10px 20px -13px rgba(0,0,0,0.1);
+}
+.hero-body{
+    /* background-color: white;
+    background-image: url(backgroundhero.svg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px; */
+}
+.heroimg{
+    position: absolute;
+    left: 27vw;
+    z-index: -1;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+.computacao{
+    color: hsl(171, 100%, 41%);
+    font-weight: bolder;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+.navbar-item{
+    border-radius: 20px;
+}
+.navbar-start a:hover{
+    background-color: hsl(48, 100%, 67%);
+}
+.navbar-end a:hover{
+    background-color: hsl(48, 100%, 67%);
+}
+.animacaomoney{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 27vw;
+    z-index: -1;
+    animation: 5s ease-out 0s 1 slideInFromLeft;
+}
+
+.natureza{
+    font-weight: bolder;
+}
+
+.box{
+    margin-left: 30vw;
+    margin-right: 10vw;
+}
+
+.logosSec2{
+    display: inline-flex;
+    justify-content: center;
+    padding-bottom: 2vh
+}
+
+.logosSec2 img{
+    max-width: 15vw;
+    max-height: 5vh;
+    margin-right: 5vw;
+}
+
+.box2sec{
+    margin-top:8vh;
+    height: 85vh;
+    width: 80vw;
+    display: block;
+    text-align: center;
+    margin-left:auto
+}
+
+.numbersSelector label{
+    font-size: small;
+}
+
+.slotArea > div {
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    min-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#chartArea{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbersDiv{
+    margin-bottom: 1vh;
+}
+
+.field {
+    max-width: 15vw;
+    margin-left: 24vw;
+    margin-bottom: 1vh;
+}
+
+.titulosec2{
+    width: 20vw;
+}
+
+.quote{
+    width: 50vw;
+    margin-left: 4vw;
+}
+
+.boxmetodo{
+    margin-top:auto;
+}
+
+.imagesmetodo img{
+    margin-right: 3vw;
+}
+
+.imagesmetodo{
+    text-align: center;
+}
+
+.boxpy{
+    height: 50vh;
+}
+
+.concl p{
+    color: black;
+}
+
+.concl i{
+    font-size: larger;
+}
+
+.concl img{
+    border-radius: 8px;
+    margin-top: 2vh;
+}
+
+.concl{
+    text-align: center;
+}

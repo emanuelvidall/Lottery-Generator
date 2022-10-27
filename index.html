@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <script src="https://kit.fontawesome.com/026e4f1f21.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="module" src="https://code.highcharts.com/maps/modules/histogram-bellcurve.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Mat p/ Computação</title>
+</head>
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <span>Matemática</span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#introducao">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Introdução</span>
+                </a>
+                <a class="navbar-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Metodologia</span>
+                </a>
+                <a class="navbar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Resultados</span>
+                </a>
+                <a class="navbar-item">
+                    <i class="fa-solid fa-pencil"></i>
+                    <span>Conclusão</span>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Emanuel Vidal</span>
+                </a>
+                <a class="navbar-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Rafael Saboia</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+        <div class="">
+            <p class="title">
+            Matemática para <span class="computacao">Computação</span>
+            </p>
+            <p class="subtitle">
+            Trabalho para composição de nota AV2
+            </p>
+            <p class="subtitle is-size-6">
+            Prof. Jose Rubens Rodrigues de Sousa
+            </p>
+            </p>
+            <p class="subtitle is-size-6">
+            Emanuel Vidal e Rafael Saboia
+            </p>
+        </div>
+        <div id="animation-container" class="animacaomoney"><script>
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('animation-container'),
+                path: 'backgroundanimated2.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                name: "Hero Animation",
+            });                  
+        </script></div>
+        </div>
+    </section>
+    <section class="hero is-fullheight" id="introducao">
+        <div class="hero-body">
+        <div class="">
+            <p class="title">
+            Introdução
+            </p>
+            <p class="subtitle">
+            O Problema, a solução e o contexto.
+            </p>
+            <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="leonard.png" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Leonard Mlodinow</strong>
+          <br>
+          [...]"Qualquer dispositivo artificial está fadado a possuir falha", disse Moshe, "porque os seres humanos não têm acesso à perfeição." Talvez seja verdade, mas a <span class="natureza">Natureza</span> tem acesso à perfeição, e realmente ocorrem eventos aleatórios no nível atômico. De fato, essa é a própria base da <span class="natureza"> quântica[...]</span>
+        </p>
+        <button class="button is-primary js-modal-trigger" data-target="modal-js-example">
+  Livro
+</button>
+      </div>
+    </div>
+  </article>
+</div>
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="rubens.jpeg" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Jose Rubens</strong>
+          <br>
+          Neste momento, sua equipe acaba de ser contratada pelo Governo Federal, mais especificamente pela Caixa Econômica Federal (órgão que administra o sorteio da Mega-Sena) para compor um time de <span class="natureza">cientistas da computação</span> responsável por elaborar um <span class="natureza">código de programação</span> para os sorteios dos números premiados. Este código deverá <span class="natureza">gerar aleatoriamente 6 números</span>, de um total de 60 dezenas (de 01 a 60).
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="rafa.jpeg" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Rafael Saboia</strong>
+          <br>
+          Serão utilizadas duas linguagens de programação <span class="natureza">JAVASCRIPT E PYTHON</span>, onde cada uma tem sua sintaxe própria para elaboração do programa. No entanto, as funções oferecidas pelos mesmos possuem algumas falhas nas quais iremos demonstrar e explicar como minimizar os problemas.
+        </p>
+      </div>
+</div>
+        </div>
+</div>
+    </section>
+    <section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="">
+      <p class="title">
+        Metodologia
+      </p>
+      <p class="subtitle">
+        Abordagem, problemas e conceitos.
+      </p>
+    </div>
+  </div>
+  <div class="box boxmetodo">
+  <label class="label">"Falhas"</label>
+  <p>Mesmo com a aleatoriedade proposta pelas fórmulas obtidas através das linguagens<span class="natureza"> JAVASCRIPT e PYTHON</span>, existe a preocupação sobre a verdadeira aleatoriedade dos números, pois na verdade, se gerados pelo computador, estamos apenas tratando de <span class="natureza">números pseudoaletórios</span>. Com isso em mente, várias formas de gerar números "verdadeiramente" aleatórios, ou mais próximos disso, com a preocupação da segurança dos sistemas que os utilizam. <br><br>Por isso foi desenvolvido em Javascript, a fórmula <span class="natureza">Crypto.getRandomValues() </span>. Outras soluções apareceram, em sua maioria, a chamada de API's que geram tais números através de seus próprios métodos de captação de eventos da natureza.<br> Hoje em dia, um dos mais "fortes" métodos, é o desenvolvido pela Universidade Nacional da Austrália em Canberra que utiliza da observação do vácuo como medida para tais números, tendo em vista que eles aparaentemente sempre são aleatórios(sem correlação).
+</p><div class="notification is-warning">
+  <button class="delete"></button>
+  <strong><a href="https://qrng.anu.edu.au">ANU QRNG - Quantum Random Numbers</a></strong><br>
+  This website offers true random numbers to anyone on the internet. The random numbers are generated in real-time in our lab <strong>by measuring the quantum fluctuations of the vacuum.</strong> The vacuum is described very differently in the quantum physics and classical physics. In classical physics, a vacuum is considered as a space that is empty of matter or photons. <strong>Quantum physics however says that that same space resembles a sea of virtual particles appearing and disappearing all the time.</strong> This is because the vacuum still possesses a zero-point energy. Consequently, the electromagnetic field of the vacuum exhibits random fluctuations in phase and amplitude at all frequencies. By carefully measuring these fluctuations, we are able to generate ultra-high bandwidth random numbers.
+  <img src="quantum.png" alt="Image">
+</div>
+</div>
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="rafa.jpeg" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Rafael Saboia</strong>
+          <br>
+          Elaborar um programa que leia um som de origem natural, como por exemplo, som de uma rua, pessoas conversando, natureza e etc. Dessa forma, temos um sinal que será único, e o programa deve gerar os números a partir desse sinal. <strong><a href="https://jeremytriplett06.medium.com/using-atmospheric-noise-to-generate-true-random-numbers-dc820ac9452d">Link da pesquisa</a></strong>
+          <img src="audigerador.png" alt="Image">
+        </p>
+      </div>
+</div>
+        </div>
+<div class="imagesmetodo">
+    <img src="lab.svg" height="30%" width="30%">
+    <img src="anulogo.svg" height="16%" width="16%">
+    <img src="anulogo2.png" height="16%" width="16%">
+    <img src="randomlogo.png" height="16%" width="16%">
+</div>
+</section>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+        <div class="titulosec2">
+            <p class="title">
+            Resultados
+            </p>
+            <p class="subtitle">
+            Números e gráficos.
+            </p>
+        </div>
+        <div class="box box2sec">
+        <img src="javascript-logo-1.png" width="50px" height="50px" alt="Logo">
+          <label class="label">Sorteio<br>Javascript Math.random()</label>
+          <div class="mainContainer">
+            <div class="slotArea">
+                <div class="slot1">
+                    <p id="first__number"></p>
+                </div>
+                <div class="slot2">
+                    <p id="second__number"></p>
+                </div>
+                <div class="slot3">
+                    <p id="third__number"></p>
+                </div>
+                <div class="slot4">
+                    <p id="fourth__number"></p>
+                </div>
+                <div class="slot5">
+                    <p id="fifth__number"></p>
+                </div>
+                <div class="slot6">
+                    <p id="sixth__number"></p>
+                </div>
+        </div>
+        <label class="label">Gráfico</label>
+        <div class="numbersSelector">
+            <label for="fname">Quantidade de Números</label>
+            <!-- <div class="numbersDiv">
+                <input type="text" id="characterField" name="fname"> -->
+                <div class="field">
+  <p class="control has-icons-left">
+    <input class="input is-normal" type="number" id="characterField" placeholder="100">
+    <span class="icon is-small is-left">
+      <i class="fa-solid fa-arrow-up-wide-short"></i>
+    </span>
+  </p>
+</div>
+            </div>
+        </div>  
+        
+            <div class="botaoArea">
+                <button class="button is-primary" onClick="fillSquares()">Sortear Números</button>
+                <button class="button is-primary" onClick="drawChart()">Desenhar Gráfico</button>
+            </div>
+            <div id="chartArea" style="width:100%; height:400px;">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+        <div class="titulosec2">
+            <p class="title">
+            Resultados
+            </p>
+            <p class="subtitle">
+            Números e gráficos.
+            </p>
+        </div>
+    <div class="box box2sec boxpy">
+            <img src="randomlogo.png" width="150px" height="50px" alt="Logo">
+          <label class="label">Sorteio<br>Random.org API call</label>
+          <div class="mainContainer">
+            <div class="slotArea">
+                <div class="slot1">
+                    <p id="first__numberpy"></p>
+                </div>
+                <div class="slot2">
+                    <p id="second__numberpy"></p>
+                </div>
+                <div class="slot3">
+                    <p id="third__numberpy"></p>
+                </div>
+                <div class="slot4">
+                    <p id="fourth__numberpy"></p>
+                </div>
+                <div class="slot5">
+                    <p id="fifth__numberpy"></p>
+                </div>
+                <div class="slot6">
+                    <p id="sixth__numberpy"></p>
+                </div>
+                 <button class="button is-primary" onClick="fillSquarespy()">Sortear Números</button>
+        </div>
+        </section>
+        <section class="hero is-fullheight">
+        <div class="hero-body">
+        <div class="titulosec2">
+            <p class="title">
+            Conclusão
+            </p>
+        </div>
+        <div class="notification concl is-warning is-light">
+  <button class="delete"></button>
+  <p><i>“Embora tenham precisado de muitos séculos para isso, os cientistas aprenderam a enxergar além da ordem aparente e reconhecer a aleatoriedade oculta na natureza e na vida cotidiana"</i>.<br>O Andar do Bêbado - Como o Acaso Determina Nossas Vidas
+<br>Leonard Mlodinow (p.24)</p>
+<img src="fibo.png" width="30%" height="30%" alt="Logo">
+<br>Fibonacci Sequence (The Golden Ratio)
+</div>
+        </section>
+    <div id="modal-js-example" class="modal">
+  <div class="modal-background"></div>
+
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img src="bebado.webp">
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
